@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RestoRasa — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Beranda</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="paket.html">Paket</a>
+      <a href="reservasi.html">Reservasi</a>
+      <a href="pesan.html">Pesanan <b class="badge" id="badge">0</b></a>
+      <a href="login.html" id="authLink">Masuk</a>
+    </nav>
+    <span class="crumb">02 / MENU</span>
+    <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="pagehead">
+        <span class="mono">MENU / PILIHAN</span>
+        <h1>Menu <em>kami.</em></h1>
+        <p class="lead">Nikmati berbagai pilihan makanan dan minuman terbaik dari kami.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab on" data-f="Semua">Semua</button>
+        <button class="tab" data-f="Makanan">Makanan</button>
+        <button class="tab" data-f="Minuman">Minuman</button>
+        <button class="tab" data-f="Dessert">Dessert</button>
+      </div>
+
+      <div class="menu-group" data-cat="Makanan">
+        <h3 class="cat">Makanan</h3>
+        <div class="grid">
+          <article class="card" data-id="m1" data-name="Nasi Goreng Spesial" data-price="35000">
+            <div class="thumb"><img src="img/nasi_goreng.jpg" alt="Nasi Goreng Spesial" loading="lazy"></div>
+            <h3>Nasi Goreng Spesial</h3>
+            <div class="foot2"><span class="price">Rp 35.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="m2" data-name="Chicken Steak" data-price="45000">
+            <div class="thumb"><img src="img/chicken_steak.jpg" alt="Chicken Steak" loading="lazy"></div>
+            <h3>Chicken Steak</h3>
+            <div class="foot2"><span class="price">Rp 45.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="m3" data-name="Beef Burger" data-price="50000">
+            <div class="thumb"><img src="img/beef_burger.jpg" alt="Beef Burger" loading="lazy"></div>
+            <h3>Beef Burger</h3>
+            <div class="foot2"><span class="price">Rp 50.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="m4" data-name="Pasta Carbonara" data-price="40000">
+            <div class="thumb"><img src="img/pasta_carbonara.jpg" alt="Pasta Carbonara" loading="lazy"></div>
+            <h3>Pasta Carbonara</h3>
+            <div class="foot2"><span class="price">Rp 40.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="m5" data-name="Ayam Bakar" data-price="42000">
+            <div class="thumb"><img src="img/ayam_bakar.jpeg" alt="Ayam Bakar" loading="lazy"></div>
+            <h3>Ayam Bakar</h3>
+            <div class="foot2"><span class="price">Rp 42.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="m6" data-name="Sop Buntut" data-price="55000">
+            <div class="thumb"><img src="img/sop_buntut.jpeg" alt="Sop Buntut" loading="lazy"></div>
+            <h3>Sop Buntut</h3>
+            <div class="foot2"><span class="price">Rp 55.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-group" data-cat="Minuman">
+        <h3 class="cat">Minuman</h3>
+        <div class="grid">
+          <article class="card" data-id="d1" data-name="Es Teh Manis" data-price="8000">
+            <div class="thumb"><img src="img/es_teh.jpeg" alt="Es Teh Manis" loading="lazy"></div>
+            <h3>Es Teh Manis</h3>
+            <div class="foot2"><span class="price">Rp 8.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="d2" data-name="Es Jeruk" data-price="10000">
+            <div class="thumb"><img src="img/es_jeruk.jpeg" alt="Es Jeruk" loading="lazy"></div>
+            <h3>Es Jeruk</h3>
+            <div class="foot2"><span class="price">Rp 10.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="d3" data-name="Matcha Latte" data-price="18000">
+            <div class="thumb"><img src="img/matcha_late.jpeg" alt="Matcha Latte" loading="lazy"></div>
+            <h3>Matcha Latte</h3>
+            <div class="foot2"><span class="price">Rp 18.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-group" data-cat="Dessert">
+        <h3 class="cat">Dessert</h3>
+        <div class="grid">
+          <article class="card" data-id="s1" data-name="Puding Karamel" data-price="15000">
+            <div class="thumb"><img src="img/pudding.jpeg" alt="Puding Karamel" loading="lazy"></div>
+            <h3>Puding Karamel</h3>
+            <div class="foot2"><span class="price">Rp 15.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+          <article class="card" data-id="s2" data-name="Es Krim Vanilla" data-price="20000">
+            <div class="thumb"><img src="img/ice_cream.jpg" alt="Es Krim" loading="lazy"></div>
+            <h3>Es Krim Vanilla</h3>
+            <div class="foot2"><span class="price">Rp 20.000</span><button class="add js-add" aria-label="Tambah">+</button></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row menu-footer">
+        <a class="btn orange" href="pesan.html">Lihat Pesanan →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <p>Jl. Merdeka No. 123, Cilegon · Buka 10.00 – 22.00 WIB · +62 812 3456 7890</p>
+    <span class="mono">© 2026 RestoRasa</span>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
