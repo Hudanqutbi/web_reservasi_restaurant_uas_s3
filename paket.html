@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RestoRasa — Paket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/paket.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Beranda</a>
+      <a href="menu.html">Menu</a>
+      <a href="paket.html" class="active">Paket</a>
+      <a href="reservasi.html">Reservasi</a>
+      <a href="pesan.html">Pesanan <b class="badge" id="badge">0</b></a>
+      <a href="login.html" id="authLink">Masuk</a>
+    </nav>
+    <span class="crumb">03 / PAKET</span>
+    <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="pagehead">
+        <span class="mono">PAKET / BUNDLE</span>
+        <h1>Paket spesial untuk <em>momen spesial.</em></h1>
+        <p class="lead">Pilih bundle terbaik dan nikmati harga lebih hemat dengan jumlah orang yang lebih banyak.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab on" data-f="Semua">Semua</button>
+        <button class="tab" data-f="Paket Hemat">Paket Hemat</button>
+        <button class="tab" data-f="Paket Premium">Paket Premium</button>
+      </div>
+
+      <div class="grid paket-grid">
+        <article class="card" data-cat="Paket Hemat" data-id="b1" data-name="Paket Hemat 2–4 Orang" data-price="120000">
+          <span class="tag">HEMAT 20%</span>
+          <div class="thumb"><img src="img/paket_hemat.png" alt="Paket Hemat 2–4 Orang" loading="lazy"></div>
+          <h3>Paket Hemat 2–4 Orang</h3>
+          <p class="sub">2 menu + 2 minuman + 2 dessert</p>
+          <div class="foot2">
+            <span><span class="old">Rp 150.000</span><span class="price">Rp 120.000</span></span>
+            <button class="btn orange sm js-add">Pilih Paket</button>
+          </div>
+        </article>
+
+        <article class="card" data-cat="Paket Hemat" data-id="b2" data-name="Paket Family 5–8 Orang" data-price="210000">
+          <span class="tag">HEMAT 20%</span>
+          <div class="thumb"><img src="img/paket_family.png" alt="Paket Family 5–8 Orang" loading="lazy"></div>
+          <h3>Paket Family 5–8 Orang</h3>
+          <p class="sub">5 menu + 4 minuman + 1 dessert</p>
+          <div class="foot2">
+            <span><span class="old">Rp 260.000</span><span class="price">Rp 210.000</span></span>
+            <button class="btn orange sm js-add">Pilih Paket</button>
+          </div>
+        </article>
+
+        <article class="card" data-cat="Paket Premium" data-id="b3" data-name="Paket VIP 9–12 Orang" data-price="360000">
+          <span class="tag">HEMAT 30%</span>
+          <div class="thumb"><img src="img/paket_vip.png" alt="Paket VIP 9–12 Orang" loading="lazy"></div>
+          <h3>Paket VIP 9–12 Orang</h3>
+          <p class="sub">8 menu + 6 minuman + 1 dessert</p>
+          <div class="foot2">
+            <span><span class="old">Rp 480.000</span><span class="price">Rp 360.000</span></span>
+            <button class="btn orange sm js-add">Pilih Paket</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <p>Jl. Merdeka No. 123, Cilegon · Buka 10.00 – 22.00 WIB · +62 812 3456 7890</p>
+    <span class="mono">© 2026 RestoRasa</span>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/paket.js"></script>
+</body>
+</html>
