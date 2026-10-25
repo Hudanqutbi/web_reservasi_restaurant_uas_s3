@@ -1,0 +1,17 @@
+.cat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 34px 0 16px;
+}
+
+.cat::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.menu-footer {
+  margin-top: 40px;
+}

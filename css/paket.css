@@ -1,0 +1,24 @@
+.paket-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.tag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 5px 10px;
+  border-radius: 99px;
+  background: var(--orange);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.old {
+  margin-right: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: line-through;
+}

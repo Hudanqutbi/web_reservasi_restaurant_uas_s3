@@ -1,0 +1,44 @@
+.authwrap {
+  max-width: 440px;
+  margin: 20px auto;
+}
+
+.auth-head {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.auth-head h2 {
+  margin-top: 14px;
+  font-size: 34px;
+}
+
+.auth-head .sub {
+  margin-top: 8px;
+}
+
+.auth-note {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.err {
+  min-height: 18px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #d23f31;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .avatar {
+  width: 80px;
+  margin: 0 auto 14px;
+  aspect-ratio: 1;
+}
+
+.profile .lead {
+  margin: 10px auto 22px;
+}

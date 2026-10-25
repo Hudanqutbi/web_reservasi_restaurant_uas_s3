@@ -1,0 +1,24 @@
+.photo {
+  position: relative;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: 340px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #2a2018, #6b3a1d 60%, #ff7a2e);
+  box-shadow: var(--shadow);
+}
+
+.photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .photo {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
