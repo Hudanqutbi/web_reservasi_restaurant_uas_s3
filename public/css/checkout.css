@@ -1,0 +1,17 @@
+.data-table {
+  margin: 12px 0 26px;
+}
+
+.order-list {
+  margin-top: 12px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.price-box {
+  margin: 14px 0;
+}
