@@ -1,4 +1,5 @@
 import express from "express";
+import router from "./routers/index.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,6 +10,7 @@ const __dirname = path.dirname(__filename);
 const publicPath = path.resolve(__dirname, "../public");
 
 app.use(express.json());
+app.use("/api", router);
 
 // Daftarkan route API sebelum static files.
 // Route API dapat didaftarkan dari server.js sebelum middleware static ini.
