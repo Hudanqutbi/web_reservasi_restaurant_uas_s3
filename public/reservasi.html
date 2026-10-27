@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RestoRasa — Reservasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reservasi.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Beranda</a>
+      <a href="menu.html">Menu</a>
+      <a href="paket.html">Paket</a>
+      <a href="reservasi.html" class="active">Reservasi</a>
+      <a href="pesan.html">Pesanan <b class="badge" id="badge">0</b></a>
+      <a href="login.html" id="authLink">Masuk</a>
+    </nav>
+    <span class="crumb">04 / RESERVASI</span>
+    <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="pagehead">
+        <span class="mono">RESERVASI / LANGKAH 1</span>
+        <h1>Reservasi <em>meja.</em></h1>
+        <p class="lead">Pilih tanggal, waktu, dan jumlah orang untuk melanjutkan.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step on"><i>1</i>Waktu &amp; Orang</div>
+        <div class="step"><i>2</i>Pilih Meja</div>
+        <div class="step"><i>3</i>Pesanan</div>
+        <div class="step"><i>4</i>Konfirmasi</div>
+      </div>
+
+      <div class="two">
+        <form class="panel" id="resForm">
+          <div class="field">
+            <label for="rDate">Tanggal Reservasi</label>
+            <input type="date" id="rDate" required>
+          </div>
+          <div class="field">
+            <label for="rTime">Jam</label>
+            <select id="rTime">
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rPeople">Jumlah Orang</label>
+            <select id="rPeople">
+              <option value="1">1 Orang</option>
+              <option value="2">2 Orang</option>
+              <option value="3">3 Orang</option>
+              <option value="4">4 Orang</option>
+              <option value="5">5 Orang</option>
+              <option value="6">6 Orang</option>
+              <option value="7">7 Orang</option>
+              <option value="8">8 Orang</option>
+              <option value="9">9 Orang</option>
+              <option value="10">10 Orang</option>
+              <option value="11">11 Orang</option>
+              <option value="12">12 Orang</option>
+            </select>
+          </div>
+          <button class="btn orange block" type="submit">Lanjutkan →</button>
+        </form>
+
+        <div class="photo">
+          <img src="img/resto_2.jpg" alt="Suasana meja makan RestoRasa">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a class="logo" href="index.html">RestoRasa<span>.</span></a>
+    <p>Jl. Merdeka No. 123, Cilegon · Buka 10.00 – 22.00 WIB · +62 812 3456 7890</p>
+    <span class="mono">© 2026 RestoRasa</span>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/reservasi.js"></script>
+</body>
+</html>
